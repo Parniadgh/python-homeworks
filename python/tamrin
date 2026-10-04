@@ -1,0 +1,49 @@
+
+while True:
+    user= input("user:")
+    password=input("password:")
+    if user=="admin" and password=="admin":
+        print("login")
+    else:
+        print("user or pass wrong")
+        continue
+    student=int(input("how many students?:"))
+    if student<1 and student>100:
+        print("wrong number")
+        continue
+    while True:
+        score=float(input("nomre bede va baraye exit 8888:"))
+        if score>20 or score<0:
+            print("wrong score")
+        if 17<=score<=20:
+            print("A")
+            if 17<=score<=18:
+                print("A-")
+            elif 18<score<=20:
+                print("A+")
+        if 14<=score<17:
+            print("B")
+            if 14<=score<=16:
+                print("B-")
+            if 16<score<17:
+                print("B+")
+        if 10<=score<14:
+            print("C")
+            if 10<=score<=12:
+                print("C-")
+            if 12<score<14:
+                print("C+")
+        if 0<=score<10:
+            print("Failllll!!!!")
+        if score==8888:
+            print("bye bye")
+            break
+    break
+
+
+
+
+
+
+
+
